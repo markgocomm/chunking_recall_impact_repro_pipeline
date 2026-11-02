@@ -1,4 +1,4 @@
-# retrieval_reproducible_pipeline_17294df9
+# chunking_recall_impact_repro_pipeline
 
 （AI安全对齐场景）分块策略对召回的影响与下游任务表现的分数能否预测下游表现？用检索与排序质量量化预测力，并列出反例。
 
@@ -15,9 +15,9 @@
 仅依赖 Python 标准库。
 
 ```bash
-python retrieval_reproducible_pipeline_17294df9.py --help
-python retrieval_reproducible_pipeline_17294df9.py --input sample.txt
-python retrieval_reproducible_pipeline_17294df9.py --input sample.txt --json
+python chunking_recall_impact_repro_pipeline.py --help
+python chunking_recall_impact_repro_pipeline.py --input sample.txt
+python chunking_recall_impact_repro_pipeline.py --input sample.txt --json
 ```
 
 输入文件按行解析。协议「可复现性」使用分隔符 `|` 区分标签与载荷。
@@ -50,7 +50,7 @@ python retrieval_reproducible_pipeline_17294df9.py --input sample.txt --json
 ## 复现步骤
 
 1. 按上面的分隔符准备输入文件，每行一条样本；
-2. 运行 `python retrieval_reproducible_pipeline_17294df9.py --input sample.txt --json`；
+2. 运行 `python chunking_recall_impact_repro_pipeline.py --input sample.txt --json`；
 3. 记录运行环境、输入文件与完整输出；
 4. **未运行的指标不要引用**：本仓库只提供测量方法与判定规则，
    不预填任何实测数字。填入实测值前请确认对应命令与输入一致。
